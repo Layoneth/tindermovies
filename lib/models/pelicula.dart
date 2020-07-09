@@ -52,28 +52,16 @@ class Pelicula {
   }
 
   double get popularity => _popularity;
-  set popularity(double popularity) => _popularity = popularity;
   int get voteCount => _voteCount;
-  set voteCount(int voteCount) => _voteCount = voteCount;
-  String get posterPath => _posterPath;
-  set posterPath(String posterPath) => _posterPath = posterPath;
+  String get posterPath => 'https://image.tmdb.org/t/p/w500/$_posterPath';
   int get id => _id;
-  set id(int id) => _id = id;
   String get backdropPath => _backdropPath;
-  set backdropPath(String backdropPath) => _backdropPath = backdropPath;
   String get originalLanguage => _originalLanguage;
-  set originalLanguage(String originalLanguage) =>
-      _originalLanguage = originalLanguage;
   String get originalTitle => _originalTitle;
-  set originalTitle(String originalTitle) => _originalTitle = originalTitle;
   String get title => _title;
-  set title(String title) => _title = title;
   double get voteAverage => _voteAverage;
-  set voteAverage(double voteAverage) => _voteAverage = voteAverage;
   String get overview => _overview;
-  set overview(String overview) => _overview = overview;
   String get releaseDate => _releaseDate;
-  set releaseDate(String releaseDate) => _releaseDate = releaseDate;
 
   Pelicula.fromJson(Map<String, dynamic> json) {
     _popularity = json['popularity'] / 1;

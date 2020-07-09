@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tindermovies/providers/peliculas_provider.dart';
 import 'package:tindermovies/services/auth.dart';
+import 'package:tindermovies/widgets/card_swiper.dart';
+import 'package:tindermovies/widgets/loading.dart';
 
 class TinderPage extends StatelessWidget {
   final peliculasProv = PeliculasProvider();
@@ -8,16 +10,24 @@ class TinderPage extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    
-    peliculasProv.getPeliculas();
-
-    return Scaffold(
-      body: Column(
-        children: <Widget>[
-          Text('Tinder'),
-          FlatButton(onPressed: () => _auth.singOut(), child: Text('Sing out'))
-        ],
-      )
+    return Column(
+      children: <Widget>[
+        FutureBuilder<List>(
+          future: peliculasProv.getPeliculas(),
+          builder: (context, snapshot) {
+            if(!snapshot.hasData) 
+            return Container(
+              height: MediaQuery.of(context).size.height*0.5,
+              child: Center(
+                child: LoadingWidget()
+              ),
+            );
+            return CardSwiper(
+              movies: snapshot.data,
+            );
+          }
+        ),
+      ],
     );
   }
 }

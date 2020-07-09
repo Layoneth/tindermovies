@@ -15,6 +15,10 @@ class MyApp extends StatelessWidget {
         home: Wraper(),
 
         theme: ThemeData(
+          appBarTheme: AppBarTheme(
+            color: Color(0xFF1C2329),
+            elevation: 8.0
+          ),
           primaryColor: Color(0xFF1E3044),
           primaryColorDark: Color(0xFF1C2329),
           primaryColorLight: Color(0xFF1E3044),

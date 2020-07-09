@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:tindermovies/models/user.dart';
 import 'package:tindermovies/pages/auth/login_page.dart';
-import 'package:tindermovies/pages/home/tinder_page.dart';
+import 'package:tindermovies/pages/home/home_page.dart';
 
 class Wraper extends StatelessWidget {
   @override
@@ -13,7 +13,7 @@ class Wraper extends StatelessWidget {
     if (user == null) {
       return LoginPage();
     } else {
-      return TinderPage();
+      return HomePage();
     }
   }
 }

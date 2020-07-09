@@ -41,30 +41,30 @@ class AuthService {
 
   // Sign In with Facebook credentials
   Future<User> sigInWithFacebook() async {
-    FacebookLogin _fbLogin = FacebookLogin();
+    try {
+      FacebookLogin _fbLogin = FacebookLogin();
 
-    final result = await _fbLogin.logIn(['email']);
-    final token = result.accessToken.token;
+      final result = await _fbLogin.logIn(['email']);
+      final token = result.accessToken.token;
 
-    switch (result.status) {
-      case FacebookLoginStatus.loggedIn:
-        _auth.signInWithCredential(
-          FacebookAuthProvider.getCredential(accessToken: token))
-          .then((onValue) {
-            User user = User.fromFirebaseUser(onValue.user);
-            return user;
-        }).catchError((e) {
-          print(e.toString());
+      switch (result.status) {
+        case FacebookLoginStatus.loggedIn:
+          final userF = await _auth.signInWithCredential(
+              FacebookAuthProvider.getCredential(accessToken: token));
+          User user = User.fromFirebaseUser(userF.user);
+          return user;
+          break;
+
+        case FacebookLoginStatus.cancelledByUser:
           return null;
-        });
-        break;
-
-      case FacebookLoginStatus.cancelledByUser:
-        return null;
-        break;
-      case FacebookLoginStatus.error:
-        return null;
-        break;
+          break;
+        case FacebookLoginStatus.error:
+          return null;
+          break;
+      }
+    } catch (e) {
+      print(e.toString());
+      return null;
     }
   }
 
