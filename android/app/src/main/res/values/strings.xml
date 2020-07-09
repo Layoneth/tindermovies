@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">"Tinder Movies"</string>
+    <string name="facebook_app_id">647269432557037</string>
+    <string name="fb_login_protocol_scheme">fb647269432557037</string>
+</resources>

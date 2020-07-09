@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>245398467879-lq2jf0knor23oicb41bbcn6snfk5r503.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.245398467879-lq2jf0knor23oicb41bbcn6snfk5r503</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDIrbA8hU_8TG76I-N1qcVE36m-C28QnSY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>245398467879</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.layodev.tindermovies</string>
+	<key>PROJECT_ID</key>
+	<string>tindermovies</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tindermovies.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:245398467879:ios:2abcad151b338328912502</string>
+	<key>DATABASE_URL</key>
+	<string>https://tindermovies.firebaseio.com</string>
+</dict>
+</plist>

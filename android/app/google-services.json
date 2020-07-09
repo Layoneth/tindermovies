@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "245398467879",
+    "firebase_url": "https://tindermovies.firebaseio.com",
+    "project_id": "tindermovies",
+    "storage_bucket": "tindermovies.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245398467879:android:4a4257899376da6f912502",
+        "android_client_info": {
+          "package_name": "com.layodev.tindermovies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245398467879-gfe1fk9901b15j2jvhd7n6rvjgtk872u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.layodev.tindermovies",
+            "certificate_hash": "af1b6ff8c738baa73d5082c3b543698cb66b9b7b"
+          }
+        },
+        {
+          "client_id": "245398467879-mhr99h8bi3i5ajm4ts4qffg3o70jnoah.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdHLd02q4Vb-8bu1kBlDCeUHiLaOH-2ZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245398467879-mhr99h8bi3i5ajm4ts4qffg3o70jnoah.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "245398467879-lq2jf0knor23oicb41bbcn6snfk5r503.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.layodev.tindermovies"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
