@@ -55,7 +55,7 @@ class Pelicula {
   int get voteCount => _voteCount;
   String get posterPath => 'https://image.tmdb.org/t/p/w500/$_posterPath';
   int get id => _id;
-  String get backdropPath => _backdropPath;
+  String get backdropPath => 'https://image.tmdb.org/t/p/w500/$_backdropPath';
   String get originalLanguage => _originalLanguage;
   String get originalTitle => _originalTitle;
   String get title => _title;

@@ -6,7 +6,6 @@ import 'package:tindermovies/widgets/loading.dart';
 
 class TinderPage extends StatelessWidget {
   final peliculasProv = PeliculasProvider();
-  final _auth = AuthService();
   
   @override
   Widget build(BuildContext context) {

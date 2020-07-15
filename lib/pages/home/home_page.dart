@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage> {
         key: _bottomNavigationKey,
         items: <Widget>[
           Icon(
-            Icons.trending_down,
+            Icons.trending_up,
             size: 30,
             color: Colors.white,
           ),
@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
             color: Colors.white,
           ),
           Icon(
-            Icons.compare_arrows,
+            Icons.supervised_user_circle,
             size: 30,
             color: Colors.white,
           ),
